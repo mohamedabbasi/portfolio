@@ -5,10 +5,11 @@
   "private": true,
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist",
+    "deploy": "gh-pages -d build",
     "dev": "next dev",
     "build": "next build && next export",
-    "start": "next start"
+    "start": "next start",
+    "export": "npm run build && next export -o _static"
   },
   "dependencies": {
     "next": "^12.0.7",
@@ -20,5 +21,17 @@
   },
   "devDependencies": {
     "gh-pages": "^3.2.3"
+  },
+  "description": "- A website where I get to tell you more about myself and future as a developer",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mohamedabbasi/portfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mohamedabbasi/portfolio/issues"
   }
 }
