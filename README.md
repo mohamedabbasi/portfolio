@@ -12,7 +12,7 @@
 - Ensuring the website is fully responsive
 - Building server-side rendering using next
 - Creating animations, layouts and themes 
-- Depolying this website in GitHub pages
+- Depolying this website using Vercel
 
 ## Sections:
 - 1. Projects: Where I talk more in depth on what projects I created and how they turned out
