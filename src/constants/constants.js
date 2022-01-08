@@ -1,7 +1,7 @@
 export const projects = [
   {
     title: 'Portfolio Website',
-    description: "My biggest project to date was this website, where I get to tell you more about myself and my love for development! I used React to create reusable UI components, NEXT.js to build server-side rendering and static applications and styled components to have component-level styles. Finally, deployed using GitHub pages",
+    description: "My biggest project to date was this website, where I get to tell you more about myself and my love for development! I used React to create reusable UI components, NEXT.js to build server-side rendering and static applications and styled components to have component-level styles. Finally, deployed using Vercel",
       image: '/images/4.jpg',
       tags: ['React', 'Next', 'Git'],
     source: 'https://github.com/mohamedabbasi/portfolio',
