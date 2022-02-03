@@ -16,25 +16,25 @@ const Technologies = () =>  (
     </Sectiontext>
     <List>
       <ListItem>
-        <DiReact size="3rem"/>
+        <DiReact size="48px"/>
         <ListContainer>
           <ListTitle>Front-End</ListTitle>
           <ListParagraph>
-            Experience with <br/> React.js & NEXT.js
+            Experience with <br/> React & Next
           </ListParagraph>
         </ListContainer>
       </ListItem>
       <ListItem>
-        <DiFirebase size="3rem"/>
+        <DiFirebase size="48px"/>
         <ListContainer>
           <ListTitle>Back-End</ListTitle>
           <ListParagraph>
-            Experience with <br/> Node.js & MongoDB
+            Experience with <br/> Node & MongoDB
           </ListParagraph>
         </ListContainer>
       </ListItem>
       <ListItem>
-        <DiJava size="3rem"/>
+        <DiJava size="48px"/>
         <ListContainer>
           <ListTitle>Java</ListTitle>
           <ListParagraph>
@@ -43,7 +43,7 @@ const Technologies = () =>  (
         </ListContainer>
       </ListItem>
       <ListItem>
-        <DiPython size="3rem"/>
+        <DiPython size="48px"/>
         <ListContainer>
           <ListTitle>Python</ListTitle>
           <ListParagraph>
