@@ -32,7 +32,7 @@ export const List = styled.ul`
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 40px;
-  margin: 3rem 0;
+  margin: 27px 0;
   
   @media ${props => props.theme.breakpoints.lg}{
     margin: 64px 0;
@@ -138,7 +138,7 @@ export const Sectiontext = styled.p`
   font-size: 20px;
   line-height: 40px;
   font-weight: 300;
-  padding-bottom: 3.6rem;
+  padding-bottom: 1px;
   color: rgba(255, 255, 255, 0.5);
 
   @media ${(props) => props.theme.breakpoints.md} {
