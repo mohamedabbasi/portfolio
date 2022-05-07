@@ -11,7 +11,7 @@ const Technologies = () =>  (
     <Sectiontext>
       I've worked with a range of technologies & languages. Including front-end design, procedural and Object-oriented programming languages.
       Here are some of the courses I've taken at Carleton University: <br/>
-      Computer Science | Web Development | Systems Programming | Statistical Modelling | Discrete Mathematics  
+      Data Structures & Algorithms | Web Development | Systems Programming | Statistical Modelling | Discrete Mathematics  
       These courses improved my technical and analytical skills, which gave me the opportunity to have hands on experience with:
     </Sectiontext>
     <List>
@@ -20,7 +20,7 @@ const Technologies = () =>  (
         <ListContainer>
           <ListTitle>Front-End</ListTitle>
           <ListParagraph>
-            Experience with <br/> React & Next
+            Experience with <br/> React & Express
           </ListParagraph>
         </ListContainer>
       </ListItem>
@@ -29,16 +29,16 @@ const Technologies = () =>  (
         <ListContainer>
           <ListTitle>Back-End</ListTitle>
           <ListParagraph>
-            Experience with <br/> Node & MongoDB
+            Experience with <br/> Node.js & MongoDB
           </ListParagraph>
         </ListContainer>
       </ListItem>
       <ListItem>
         <DiJava size="48px"/>
         <ListContainer>
-          <ListTitle>Java</ListTitle>
+          <ListTitle>DevOps</ListTitle>
           <ListParagraph>
-            Experience with <br/> Data Structures & Algorithms
+            Experience with <br/> Docker, Gradle & AWS
           </ListParagraph>
         </ListContainer>
       </ListItem>
@@ -47,7 +47,7 @@ const Technologies = () =>  (
         <ListContainer>
           <ListTitle>Python</ListTitle>
           <ListParagraph>
-            Experience with <br/> Flask, pandas, Matplotlib & BeautifulSoup
+            Experience with <br/> Flask, pandas, Selenium & BeautifulSoup
           </ListParagraph>
         </ListContainer>
       </ListItem>
