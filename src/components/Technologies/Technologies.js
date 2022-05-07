@@ -34,7 +34,7 @@ const Technologies = () =>  (
         </ListContainer>
       </ListItem>
       <ListItem>
-        <DiJava size="48px"/>
+        <DiMsqlServer size="48px"/>
         <ListContainer>
           <ListTitle>DevOps</ListTitle>
           <ListParagraph>
