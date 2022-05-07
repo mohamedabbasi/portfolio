@@ -42,5 +42,5 @@ export const TimeLineData = [
   { year: 2020, text: 'Enrolled at Carleton for Bachelor of Computer Science', },
   { year: 2020, text: 'Learnt Java, C, Discrete Mathematics & Data Structures', },
   { year: 2021, text: 'Started building my own projects and published them through Github', },
-  { year: 2022, text: 'Looking for my first CS related job!', },
+  { year: 2022, text: 'Landed my first internship as a Software Developer!', },
 ];

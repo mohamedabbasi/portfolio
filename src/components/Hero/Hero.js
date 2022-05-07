@@ -12,7 +12,7 @@ const Hero = () => (
           Welcome To My Portfolio!
         </SectionTitle>
         <SectionText>
-          Hello, my name is Mohamed Abbasi and I'm a second-year undergraduate student at Carleton University majoring in Computer Science with a minor in Mathematics. I'm currently looking for a Co-op position for the Summer & Fall 2022 terms.
+          Welcome! My name is Mohamed Abbasi and I'm a third-year undergraduate student at Carleton University majoring in in Honours of Computer Science with a minor in Mathematics. I'm currently looking for a Co-op position for the Fall 2022 term.
         </SectionText>
         <Button onClick={() => window.location = "https://www.linkedin.com/in/mohamed-abbasi/"}>LinkedIn Profile</Button>
       </LeftSection>
