@@ -18,8 +18,8 @@ export const LeftSection = styled.div`
 `;
 
 export const SectionText = styled.p`
-  max-width: 1000px;
-  font-size: 20px;
+  max-width: 800px;
+  font-size: 40px;
   line-height: 40px;
   font-weight: 300;
   padding-bottom: 3.6rem;
