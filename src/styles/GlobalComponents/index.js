@@ -98,6 +98,7 @@ export const SectionDivider = styled.div`
     height: 2px;
   }
 `
+
 export const SectionSubText = styled.p`
   max-width: 800px;
   font-weight: 300;
