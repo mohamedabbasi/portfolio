@@ -1,7 +1,23 @@
-import React, { useState, useRef, useEffect } from 'react';
-import { CarouselButton, CarouselButtonDot, CarouselButtons, CarouselContainer, CarouselItem, CarouselItemImg, CarouselItemText, CarouselItemTitle, CarouselMobileScrollNode, Sectiontext, ListTitle } from './TimeLineStyles';
-import { Section, SectionDivider, SectionTitle } from '../../styles/GlobalComponents';
-import { TimeLineData } from '../../constants/constants';
+import React, { useState, useRef, useEffect } from "react";
+import {
+  CarouselButton,
+  CarouselButtonDot,
+  CarouselButtons,
+  CarouselContainer,
+  CarouselItem,
+  CarouselItemImg,
+  CarouselItemText,
+  CarouselItemTitle,
+  CarouselMobileScrollNode,
+  SectionText,
+  ListTitle,
+} from "./TimeLineStyles";
+import {
+  Section,
+  SectionDivider,
+  SectionTitle,
+} from "../../styles/GlobalComponents/Section";
+import { TimeLineData } from "../../constants/constants";
 
 const TOTAL_CAROUSEL_COUNT = TimeLineData.length;
 
@@ -10,56 +26,71 @@ const Timeline = () => {
   const carouselRef = useRef();
 
   const scroll = (node, left) => {
-    return node.scrollTo({ left, behavior: 'smooth' });
-  }
+    return node.scrollTo({ left, behavior: "smooth" });
+  };
 
   const handleClick = (e, i) => {
     e.preventDefault();
 
     if (carouselRef.current) {
-      const scrollLeft = Math.floor(carouselRef.current.scrollWidth * 0.7 * (i / TimeLineData.length));
-      
+      const scrollLeft = Math.floor(
+        carouselRef.current.scrollWidth * 0.7 * (i / TimeLineData.length)
+      );
+
       scroll(carouselRef.current, scrollLeft);
     }
-  }
+  };
 
   const handleScroll = () => {
     if (carouselRef.current) {
-      const index = Math.round((carouselRef.current.scrollLeft / (carouselRef.current.scrollWidth * 0.7)) * TimeLineData.length);
+      const index = Math.round(
+        (carouselRef.current.scrollLeft /
+          (carouselRef.current.scrollWidth * 0.7)) *
+          TimeLineData.length
+      );
 
       setActiveItem(index);
     }
-  }
+  };
 
-  // snap back to beginning of scroll when window is resized
-  // avoids a bug where content is covered up if coming from smaller screen
+  /* Snap back to beginning of scroll when window is resized
+	avoids a bug where content is covered up if coming from smaller screen */
   useEffect(() => {
     const handleResize = () => {
       scroll(carouselRef.current, 0);
-    }
+    };
 
-    window.addEventListener('resize', handleResize);
+    window.addEventListener("resize", handleResize);
   }, []);
 
   return (
     <Section id="about">
       <SectionDivider />
       <SectionTitle main>About Me</SectionTitle>
-      <Sectiontext>
-        Self-driven and motivated Computer Science student adept at testing software products, developing and implementing new software platforms and assistance to colleagues. I’ve gained significant experience using C, Python, Java, HTML/CSS and JavaScript while documenting my journey through my portfolio website. I’m currently completing a co-op work term at Getit Technologies to gain exposure of developing iOS and Android mobile applications with XCode and Android Studio. Throughout my life overcoming adversity has been one of my proudest accomplishments and it always reminds me where I started and where I am now. I'm also enrolled in the co-op program because I want to explore multiple career path's early on in my career, I also want to network with professionals in the field and having this opportunity is my main goal right now.
-      </Sectiontext>
+      <SectionText>
+        Self-driven and motivated Computer Science student proficient at testing
+        software products, developing and implementing new software platforms.
+        Overcoming adversity has been one of my proudest accomplishments
+        throughout my life, and it always reminds me where I started and where I
+        am now. I'm also enrolled in the co-op program because I want to explore
+        multiple career paths early in my journey, as well as networking with
+        professionals in the field, and having this opportunity is my main goal
+        right now.
+      </SectionText>
       <ListTitle>Here's a timeline of my progress:</ListTitle>
       <CarouselContainer ref={carouselRef} onScroll={handleScroll}>
         <>
           {TimeLineData.map((item, index) => (
             <CarouselMobileScrollNode
               key={index}
-              final={index === TOTAL_CAROUSEL_COUNT - 1}>
+              final={index === TOTAL_CAROUSEL_COUNT - 1}
+            >
               <CarouselItem
                 index={index}
                 id={`carousel__item-${index}`}
                 active={activeItem}
-                onClick={(e) => handleClick(e, index)}>
+                onClick={(e) => handleClick(e, index)}
+              >
                 <CarouselItemTitle>
                   {`${item.year}`}
                   <CarouselItemImg
@@ -67,7 +98,8 @@ const Timeline = () => {
                     height="6"
                     viewBox="0 0 208 6"
                     fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
                     <path
                       fillRule="evenodd"
                       clipRule="evenodd"
@@ -82,7 +114,8 @@ const Timeline = () => {
                         y1="0.5"
                         x2="208"
                         y2="0.500295"
-                        gradientUnits="userSpaceOnUse">
+                        gradientUnits="userSpaceOnUse"
+                      >
                         <stop stopColor="white" />
                         <stop
                           offset="0.79478"
@@ -103,17 +136,17 @@ const Timeline = () => {
         {TimeLineData.map((item, index) => {
           return (
             <CarouselButton
-              key={index}
+              key={item}
               index={index}
               active={activeItem}
               onClick={(e) => handleClick(e, index)}
-              type="button">
+              type="button"
+            >
               <CarouselButtonDot active={activeItem} />
             </CarouselButton>
           );
         })}
       </CarouselButtons>
-      <SectionDivider/>
     </Section>
   );
 };
