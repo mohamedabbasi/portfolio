@@ -17,8 +17,8 @@ const Hero = () => (
       <SectionText>
         Greetings, my name is Mohamed Abbasi and I'm a third-year undergraduate
         student at Carleton University majoring in Computer Science with a minor
-        in Mathematics. I'm currently looking for a co-op position for Summer
-        2023
+        in Mathematics. I'm currently looking for a co-op position for Winter
+        2024
       </SectionText>
       <Button
         onClick={() =>

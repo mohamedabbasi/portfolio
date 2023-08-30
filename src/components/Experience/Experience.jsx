@@ -21,34 +21,24 @@ const Experience = () => (
     <SectionDivider />
     <SectionTitle main>Work Experience</SectionTitle>
     <SectionText>
-      Landing my first two co-op positions was a challenging and rewarding
-      experience as I had the chance to view the world of software development
-      from a different perspective. These roles were unique because they didn't
-      feel like an internship or a temporary position; I felt like a valuable
-      member of a committed team that consistently delivers high-quality
-      products. Working with the front-end team in both companies was a
-      wonderful opportunity that allowed me to tap into my creativity when it
-      came to designing web pages and building type-safe applications. Since
-      working in an agile environment is not often taught at universities, this
-      experience was a great way for me to discover the value of teamwork and
-      collaboration. As a co-op student, my day-to-day activities included
-      participating in daily standups with the team, prioritizing my work
-      tickets, and writing secure and transferable code.
+      Securing my initial co-op placements was both rigorous and fulfilling, providing me a novel lens into the software development realm. These positions transcended the typical internship feel; I was embraced as an integral part of dedicated teams renowned for their premium product deliveries. Collaborating with the front-end units of both organizations was an invigorating experience, fueling my creative flair in web design and the development of type-safe applications. While university curricula rarely delve into agile frameworks, these roles offered me a firsthand appreciation of the essence of teamwork and synergy. Beyond the titles of an intern, my routine encompassed active participation in daily stand-ups, meticulous task prioritization, and crafting secure, modular code.
     </SectionText>
     <List>
+    <ListItem>
+        <Img src="/images/7.svg" />
+        <ListContainer>
+          <ListTitle>Environment Canada</ListTitle>
+          <ListParagraph>
+            At ECCC, I specialized in backend development, focusing on API design and server-side optimizations within the NPRI project. Using ASP.NET and C#, I delivered robust solutions. Collaboration was key, with weekly standups and in-person sessions fostering team synergy. Employing tools like Azure DevOps and Swagger, I navigated the scrum methodology from sprint planning to retrospectives, ensuring consistent growth and improvement.
+          </ListParagraph>
+        </ListContainer>
+      </ListItem>
       <ListItem>
         <Img src="/images/5.png" />
         <ListContainer>
           <ListTitle>IMRSV Data Labs</ListTitle>
           <ListParagraph>
-            At IMRSV, I was part of the front-end development team and had the
-            opportunity to work on a variety of tasks and take on many
-            responsibilities. This gave me a chance to develop my skills and
-            make a meaningful contribution to the company's flagship product,
-            Anvil Crucible. I used: Typescript to write type safe programs, git
-            for collaboration and code reviews, docker for running containerized
-            applications and swagger for designing, building, and documenting
-            APIs.
+            At IMRSV, I served on the front-end development team, undertaking a diverse range of tasks and assuming substantial responsibilities. This role afforded me the platform to hone my expertise and elevate my creativity. My toolset included: Typescript for ensuring type-safe programming, Git for collaborative development and thorough code reviews, Docker for executing containerized applications, and Swagger as a comprehensive solution for designing, constructing, and annotating APIs.
           </ListParagraph>
         </ListContainer>
       </ListItem>

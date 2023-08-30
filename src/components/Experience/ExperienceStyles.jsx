@@ -3,8 +3,8 @@ import styled from "styled-components";
 export const List = styled.ul`
   list-style-type: none;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 60px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
   margin: 27px 0;
 
   @media ${(props) => props.theme.breakpoints.lg} {
@@ -110,9 +110,10 @@ export const SectionText = styled.p`
 `;
 
 export const Img = styled.img`
-  width: 320px;
+  width: 180px;
   object-fit: cover;
   overflow: hidden;
+  margin: 0 auto;
 
   @media ${(props) => props.theme.breakpoints.sm} {
     width: 100%;
